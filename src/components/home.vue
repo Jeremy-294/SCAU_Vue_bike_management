@@ -3,9 +3,9 @@
         <!-- 头部区域 -->
         <el-header>
             <div>
-               <img src="../assets/logo2.png" alt="">
+               <img src="../assets/logo-n.png" alt="">
             </div>
-            <span>校园电单车管理后台</span>
+            <!-- <span>校园电单车管理后台</span> -->
             <el-button type="info" @click="logout">退出登录</el-button>
         </el-header>
         <!-- 页面主体区域 -->
@@ -124,12 +124,12 @@ export default {
     font-size: 20px;
 }
 .el-header img{
-    width: 100px;
+    width: 250px;
     height: 100px;
 }
 .el-header span{
     position: absolute;
-    margin-left: 120px;
+    margin-left: 230px;
 }
 .el-aside{
     background-color: #333744;
