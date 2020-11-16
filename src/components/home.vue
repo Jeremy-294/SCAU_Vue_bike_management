@@ -6,7 +6,7 @@
                <img src="../assets/logo-n.png" alt="">
             </div>
             <!-- <span>校园电单车管理后台</span> -->
-            <el-button type="info" @click="logout">退出登录</el-button>
+            <el-button plain type="primary" @click="logout">退出</el-button>
         </el-header>
         <!-- 页面主体区域 -->
         <el-container>
@@ -20,9 +20,9 @@
             :collapse="isCOllapse"
             :collapse-transition="false"
             unique-opened
-            background-color="#333744"
-            text-color="#fff"
-            active-text-color="#409eff">
+            background-color="rgb(247,247,247)"
+            text-color="rgb(66,78,103)"
+            active-text-color="rgb(0,152,234)">
             <!-- 一级菜单 -->
             <el-submenu :index="item.id+''" v-for="item in menulist" :key='item.id'>
             <!-- 一级菜单的模板 -->
@@ -94,7 +94,7 @@ export default {
             const {data:res} = await this.$http.get('menus')
             if(res.meta.status !== 200) return this.$message.error(res.meta.msg)
             this.menulist = res.data    
-            console.log(res)
+            console.log(res.data)
         },
         // 点击按钮切换菜单的折叠与展开
         toggleCollapse(){
@@ -114,42 +114,48 @@ export default {
     width: 100%;
     height: 100%;
 }
+#shadow{
+    box-shadow: 0 0 10px #111;
+}
 .el-header{
-    background-color: #373d41;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding-left: 0%;
     align-items: center;
     color: #fff;
     font-size: 20px;
+    border-bottom: 3px solid rgb(245,245,245);
 }
 .el-header img{
-    width: 250px;
-    height: 100px;
+    width: 170px;
+    height: 50px;
+    margin-left: 20px;
 }
 .el-header span{
     position: absolute;
     margin-left: 230px;
 }
 .el-aside{
-    background-color: #333744;
+    background-color: rgb(247,247,247);
 }
 .el-aside .el-menu {
         border-right: none;
     }
 .el-main{
-    background-color: #eaedf1;
+    background-color: #fff;
 }
 .iconfont{
     margin-right: 10px;
 }
 .toggle-button{
-    background-color: #4a5064;
+    background-color:rgb(247,247,247);
     text-align: center;
-    color: #fff;
+    color: rgb(64,158,255);
     font-size: 10px;
     line-height: 24px;
     letter-spacing: 5px;
     cursor: pointer;
+    font-weight: 900;
 }
 </style>
