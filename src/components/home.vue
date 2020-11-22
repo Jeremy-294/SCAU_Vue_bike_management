@@ -6,6 +6,11 @@
                <img src="../assets/logo-n.png" alt="">
             </div>
             <!-- <span>校园电单车管理后台</span> -->
+            <div style="display: flex;justify-content: right;align-items: center;margin-right: -300px;">
+                
+                <span style="color: rgb(7, 7, 7);margin-right: 200px;font-size: 15px;">Hi!</span>
+                <span style="color: cornflowerblue;margin-left: 265px;font-size: 15px;"><i class="el-icon-user"></i>  admin</span>
+            </div>
             <el-button plain type="primary" @click="logout">退出</el-button>
         </el-header>
         <!-- 页面主体区域 -->
