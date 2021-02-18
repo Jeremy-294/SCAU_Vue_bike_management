@@ -6,9 +6,9 @@
 - 涉及技术：Vue 全家桶+ElementUI+ECharts+MySQL
 - 项目地址：https://github.com/Jeremy-294/SCAU_Vue_bike_management
 - 详细内容：
- - 通过 Axios 的二次封装以及路由拦截，sessionStorage 等技术，配合 Token 实现了登录状态的管理及鉴权。
- - 使用 this.$refs.form.validate()实现表单验证，并使用 async、await 配合 Axios 实现异步请求与数据提交。
- - 优化 ElementUI 按需导入代码，减小项目体积，为每个 Vue 组件创建独立码云分支，各分支独立更新。
+  - 通过 Axios 的二次封装以及路由拦截，sessionStorage 等技术，配合 Token 实现了登录状态的管理及鉴权。
+  - 使用 this.$refs.form.validate()实现表单验证，并使用 async、await 配合 Axios 实现异步请求与数据提交。
+  - 优化 ElementUI 按需导入代码，减小项目体积，为每个 Vue 组件创建独立码云分支，各分支独立更新。
 - 收获：了解到了前后端开发的基本流程，学习了基础的 Axios 请求，async 和 await 实现异步请求，路由导航和守卫，
   validate属性验证，ElementUI 开发，如何使用 NodeJS 接口连接数据库等开发知识。
 
