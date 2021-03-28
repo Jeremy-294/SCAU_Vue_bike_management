@@ -324,7 +324,7 @@ export default{
                 else{
                     this.$message.success('删除品牌与分类成功！')
                     this.getCateList()
-                }
+                }//五羊梦幻电动车
         }
 
 

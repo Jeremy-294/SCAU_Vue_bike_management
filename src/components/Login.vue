@@ -1,5 +1,10 @@
 <template>
+    <!-- <div class="background">
+        <img src="../assets/bg.png" width="100%" height="100%" alt="">
+    </div> -->
+    <!-- 登录部分 -->
     <div class="login_container">
+       <!-- <img src="../assets/bg.png" width="100%" height="100%" alt=""> -->
        <div class="login_box">
            <!-- 头像区域 -->
             <div class="avatar_box">
@@ -18,7 +23,7 @@
                 <!-- 按钮 -->
                 <el-form-item class="btns">
                     <el-button type="primary" @click="login">登录</el-button>
-                    <el-button type="info" @click="resetLoginForm">重置</el-button>
+                    <el-button  plain @click="resetLoginForm">重置</el-button>
                 </el-form-item>
             </el-form>
        </div>
@@ -46,7 +51,7 @@ export default {
                     { required: true, message: '请输入密码', trigger: 'blur' },
                     { min: 6, max: 10, message: '长度在 6 到 10 个字符', trigger: 'blur' }
                 ]
-            }
+            },
         };
     },
     methods: {
@@ -85,7 +90,7 @@ export default {
 
 <style lang="less" scoped>
 .login_container{
-    background-color: #2b4b6b;
+    background-color: rgb(243,243,246);
     height: 100%;
 }
 .login_box{
@@ -98,6 +103,7 @@ export default {
     top: 50%;
     /* 移动本身的比例 左右 , 上下 */
     transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #ddd;
 }
 .avatar_box{
     width: 130px;
